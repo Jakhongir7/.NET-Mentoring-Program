@@ -32,14 +32,14 @@ namespace Task_WPF_2
             const string greeting = "Hello";
 
             // Send the username to the library
-            DateTimeProvider name = new(username);
+            DateTimeProvider addDateTime = new();
 
             if (!string.IsNullOrEmpty(username))
             {
                 // Task 1 - Display the input value
                 // Task 2 - Print the value of the variable with time and greeting
                 MessageBox.Show(greeting + ", " + username + "\n"
-                    + name.GetResponseWithDateTime());
+                    + addDateTime.GetResponseWithDateTime(username));
             }
             else
             {

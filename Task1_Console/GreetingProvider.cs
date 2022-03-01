@@ -14,13 +14,13 @@ namespace Task1_Console
             string userName = Console.ReadLine();
 
             // Send the username to the library
-            DateTimeProvider username = new(userName);
+            DateTimeProvider addDateTime = new();
 
             // Task 1 - Display the input value
             Console.WriteLine("Hello, " + userName);
 
             // Task 2 - Print the value of the variable with time and greeting
-            Console.WriteLine(username.GetResponseWithDateTime());
+            Console.WriteLine(addDateTime.GetResponseWithDateTime(userName));
 
            
         }
