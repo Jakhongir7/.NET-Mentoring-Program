@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MyLib;
+using Tasks_Library;
 
 namespace Task_WPF_2
 {
@@ -28,17 +28,18 @@ namespace Task_WPF_2
         private void BtnSend(object sender, RoutedEventArgs e)
         {
             // Create a string variable and get user input from the keyboard and store it in the variable
-            string text = userName.Text;
+            string username = userName.Text;
+            const string greeting = "Hello";
 
             // Send the username to the library
-            Hello_Time username = new(text);
+            DateTimeProvider name = new(username);
 
-            if (text != "")
+            if (!string.IsNullOrEmpty(username))
             {
-                // Display the input value
-                // Task 2 Print the value of the variable with Time and Hello
-                MessageBox.Show("Hello, " + text + "\n"
-                    + username.Print());
+                // Task 1 - Display the input value
+                // Task 2 - Print the value of the variable with time and greeting
+                MessageBox.Show(greeting + ", " + username + "\n"
+                    + name.GetResponseWithDateTime());
             }
             else
             {

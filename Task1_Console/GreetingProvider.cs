@@ -1,9 +1,9 @@
 ﻿using System;
-using MyLib;
+using Tasks_Library;
 
 namespace Task1_Console
 {
-    class Program
+    class GreetingProvider
     {
         static void Main(string[] args)
         {
@@ -14,13 +14,13 @@ namespace Task1_Console
             string userName = Console.ReadLine();
 
             // Send the username to the library
-            Hello_Time username = new(userName);
+            DateTimeProvider username = new(userName);
 
-            // Display the input value
+            // Task 1 - Display the input value
             Console.WriteLine("Hello, " + userName);
 
-            // Task 2 Print the value of the variable with Time and Hello
-            Console.WriteLine(username.Print());
+            // Task 2 - Print the value of the variable with time and greeting
+            Console.WriteLine(username.GetResponseWithDateTime());
 
            
         }

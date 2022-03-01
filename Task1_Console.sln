@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task1_Console", "Task1_Console\Task1_Console.csproj", "{2C66C592-E4E0-412A-A4B1-A9D8D78C93EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLib", "MyLib\MyLib.csproj", "{C38141D8-D704-4E56-8F05-2AE21B5F18AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks_Library", "MyLib\Tasks_Library.csproj", "{C38141D8-D704-4E56-8F05-2AE21B5F18AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_WPF_2", "Task_WPF_2\Task_WPF_2.csproj", "{C85069E5-8949-4619-AD64-0A551B9A0EA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_WPF_2", "Task_WPF_2\Task_WPF_2.csproj", "{C85069E5-8949-4619-AD64-0A551B9A0EA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

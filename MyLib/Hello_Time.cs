@@ -1,19 +1,24 @@
 ﻿using System;
 
-namespace MyLib
+namespace Tasks_Library
 {
-    public class Hello_Time
+    public class DateTimeProvider
     {
-        string username;
+        private string username;
+        const string greeting = "Hello";
         DateTime current_time = DateTime.Now;
-        public Hello_Time(string name)
+
+        // The constructor of the class to initialize username
+        public DateTimeProvider(string username)
         {
-            this.username = name;
+            this.username = username;
         }
-        public string Print()
+
+        // Get property that provides a greeting with the current time 
+        public string GetResponseWithDateTime()
         {
-            username = $"{current_time} Hello, {username}";
-            return username;
+            string greeting_response = $"{current_time} {greeting}, {username}";
+            return greeting_response;
         }
     }
 }
