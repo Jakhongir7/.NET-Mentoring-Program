@@ -7,6 +7,8 @@ namespace Task1_Console
     {
         static void Main(string[] args)
         {
+            const string greeting = "Hello";
+
             // Type your username
             Console.WriteLine("Enter username:");
 
@@ -14,7 +16,7 @@ namespace Task1_Console
             string userName = Console.ReadLine();
 
             // Task 1 - Display the input value
-            Console.WriteLine("Hello, " + userName);
+            Console.WriteLine(greeting + ", " + userName);
 
             // Task 2 - Print the value of the variable with time and greeting
             Console.WriteLine(DateTimeProvider.GetResponseWithDateTime(userName));
