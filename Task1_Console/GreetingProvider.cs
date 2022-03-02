@@ -13,14 +13,11 @@ namespace Task1_Console
             // Create a string variable and get user input from the keyboard and store it in the variable
             string userName = Console.ReadLine();
 
-            // Send the username to the library
-            DateTimeProvider addDateTime = new();
-
             // Task 1 - Display the input value
             Console.WriteLine("Hello, " + userName);
 
             // Task 2 - Print the value of the variable with time and greeting
-            Console.WriteLine(addDateTime.GetResponseWithDateTime(userName));
+            Console.WriteLine(DateTimeProvider.GetResponseWithDateTime(userName));
 
            
         }
